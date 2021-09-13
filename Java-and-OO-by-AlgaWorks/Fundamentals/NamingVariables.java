@@ -1,4 +1,5 @@
 package Fundamentals;
+
  public class NamingVariables {
     public static void main(String[] args) {
         //Variables:
@@ -9,7 +10,6 @@ package Fundamentals;
         int number_k;
         int Number;
         int number_k_10;
-
         int numberK; //This is a camel-case use.
 
         //int 10_number;

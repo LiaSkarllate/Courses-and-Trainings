@@ -1,4 +1,5 @@
 package Fundamentals;
+
 public class PrintingStrings {
     public static void main(String[] args) {
         //Variables:

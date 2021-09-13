@@ -1,9 +1,11 @@
 package Fundamentals;
+
 //Imports:
 import java.util.Scanner;
 
 public class Inputs {
     public static void main(String[] args) {
+        //Objects:
         Scanner input = new Scanner(System.in);
 
         System.out.print("Type your name: ");
@@ -18,5 +20,6 @@ public class Inputs {
         System.out.println("Hello, " + name + "!");
 
         System.out.println("Hello, " + name + ". Your IMC is " + (weight / (hight * hight)) + ".");
+        input.close();
     }
 }

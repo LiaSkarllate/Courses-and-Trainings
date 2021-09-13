@@ -1,4 +1,6 @@
 package Fundamentals;
+
+//Imports:
 import java.util.Scanner;
 
 public class Scope {

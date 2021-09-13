@@ -1,5 +1,6 @@
 package Fundamentals;
- public class ArithmeticOperators {
+
+public class ArithmeticOperators {
     public static void main(String[] args) {
         //Variables:
         int number1 = 5;
@@ -11,6 +12,7 @@ package Fundamentals;
         System.out.println("number1 = " + number1);
         System.out.println("number2 = " + number2);
         System.out.println("number3 = " + number3);
+        
         System.out.println("arithmeticAverage = " + arithmeticAverage);
     }
 }
