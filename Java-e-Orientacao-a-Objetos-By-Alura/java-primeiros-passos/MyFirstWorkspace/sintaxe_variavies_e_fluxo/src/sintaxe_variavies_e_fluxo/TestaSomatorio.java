@@ -13,5 +13,4 @@ public class TestaSomatorio {
 		System.out.println(contador);
 		System.out.println(total);
 	}
-
 }

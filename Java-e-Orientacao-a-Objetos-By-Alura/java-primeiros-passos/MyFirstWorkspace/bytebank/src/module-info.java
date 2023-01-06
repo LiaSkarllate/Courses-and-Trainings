@@ -1,0 +1,6 @@
+/**
+ * @author william
+ *
+ */
+module bytebank {
+}

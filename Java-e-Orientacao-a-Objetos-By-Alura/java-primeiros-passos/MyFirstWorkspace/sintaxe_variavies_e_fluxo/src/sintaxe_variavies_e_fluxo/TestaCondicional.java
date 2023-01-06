@@ -18,7 +18,7 @@ public class TestaCondicional {
 			}
 		}
 
-		// Embora seja opcional se a instrução (if, for, while, etc) em apenas uma instrução, usar sempre as
+		// Embora seja opcional se a instrução (if, for, while, etc) tem apenas uma instrução, usar sempre as
 		// chaves é uma boa prática.
 	}
 }

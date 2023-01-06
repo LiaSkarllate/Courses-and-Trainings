@@ -7,8 +7,8 @@ public class TestaEscopo {
 		int idade = 20;
 		int quantidadePessoas = 3;
 
-		// Variáveis locais/temporárias de um método não tem valor padrão
-		// e precisam estar inicilizadas antes de serem usadas.
+		// Variáveis locais/temporárias de um método, diferente de atributos de uma
+		// classe, não tem valor padrão e precisam estar inicilizadas antes de serem usadas.
 
 		boolean acompanhado;
 		// System.out.println(acompanhado);
