@@ -1,0 +1,14 @@
+ + Interface de Rede;
+	 - tcpdump: Monitorar (interceptar e ler) pacotes trafegados (do inglês, sniffer) em uma interface de rede;
+	 	* tcpdump -i eth0
+	 	* tcpdump -n -i ip6
+	 	* tcpdump -i eth0 -w tcpdump01.cap
+	 	* tcpdump -n -c 4 -i eth0 icmp and src 192.168.0.8
+	 - netstat: Imprimir informações sobras conexões, tabelas de roteamento e estatísticas de uma interface de rede.
+	 	* netstat -nat
+	 	* netstat -at
+	 	* netstat -tupan
+	 	* netstat -tupano
+ + SSH (do inglês, Secure Shell).
+	 - ssh: Conectar-se em modo texto a um hospeideiro remoto através de uma conexão TCP criptografada;
+	 - scp: Conectar-se a um hospedeiro remoto via SSH para trasferir um arquivo.

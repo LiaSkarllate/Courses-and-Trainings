@@ -1,0 +1,24 @@
+ + DNS (do inglês, Sistema de Nomes de Domínios);
+	- whois: Recuperar e imprimir informações do registro de um domínio ou de um endereço;
+		* whois www.guardweb.com.br
+		* whois www.guardweb.com.br -h whois.dns.pt
+	- host: Recuperar e imprimir registros DNS de um domínio;
+	 	* host -t NS (domain): Recuperar e imprimir servidores DNS que são autoridade para um domínio;
+	 	* host -d (domain) (server): Recuperar e imprimir de forma verbosa registros DNS de um domínio consultados em um servidor DNS;
+	 	* host -l (name) (server): Executar uma transferência de zona para um servidor DNS, enquanto recupera e imprime registros DNS de um domínio.
+	- dig: Recuperar e imprimir registros DNS de um domínio;
+	- dnsenum: Recuperar e imprimir registros DNS de um domínio e os seus subdomínios (com base em uma lista);
+		* dnsenum --enum (domain) -f (list.txt): Recuperar e imprimir registros DNS de um domínio e os seus subdomínios (com base em uma lista).
+	- dnsrecon: Recuperar e imprimir registros DNS de um domínio e os seus subdomínios (com base em uma lista);
+	- fierce: Recuperar e imprimir registros DNS de um domínio e os seus subdomínios (com base em uma lista);
+	- assetfinder: Recuperar e imprimir subdomínios de um domínio (sem base em uma lista);
+	- subfinder: Recuperar e imprimir subdomínios de um domínio (sem base em uma lista);
+	- maltego: Agregar informações de várias bases de dados públicas e visualizar em formato de grafos.
+ + Rastreamento/Registro de usuário (do inglês, User Tracking/Logging);
+ 	- Blasze:
+ 	- MailTracking:
+ + Endereços de E-mail;
+ 	- theHarvester: Recuperar de bases públicas e imprimir endereços de e-mail de um domínio;
+ 	- gather: Recuperar de bases públicas e imprimir endereços de e-mail de um domínio.
+ + Aplicações Web.
+ 	- whatweb: Recuperar e imprimir as tecnologias de desenvolvimento utilizadas por um site.

@@ -1,0 +1,7 @@
+ + Autenticação;
+	- Usar credenciais indevidamente expostas ou internamente ou externamente;
+	- Realizar um ataque de força bruta para tentar encontrar credenciais;
+		* Senhas;
+        	* Códigos de verificação, o que inclui 2FA.
+	- Desviar (do inglês, bypass) elementos (páginas, consultas, validações, etapas, etc) da aplicação por falta de validação;
+ 	- Usar a autorização para recuperar as credenciais gerada para um usuário para um outro usuário.
