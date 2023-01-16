@@ -11,10 +11,7 @@ public class TestaBanco {
 		contaDoWilliam.deposita(100);
 
 		// Associação de um Cliente a uma Conta (composição):
-		// contaDoWilliam.titular = william;
 
 		System.out.println(william);
-		// System.out.println(contaDoWilliam.titular);
-		// System.out.println(contaDoWilliam.titular.nome);
 	}
 }

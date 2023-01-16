@@ -2,7 +2,7 @@ package bytebank;
 
 public class Conta {
 	// Atributos:
-	double saldo;
+	private double saldo;
 	int agencia/* = 42 */; // O valor padrão de atributos pode ser alterado.
 	int numero;
 	// É preciso ter cuidado com atributos de referência não inicializados.
@@ -30,4 +30,13 @@ public class Conta {
 			return false;
 		}
 	}
+	
+	// Getters e setters:
+	public double getSaldo() {
+		return this.saldo;
+	}
+	
+	// Nesse caso, para o atributo "saldo", o uso de um método modificador (do
+	// inglês, setter) não faz sentido, pois já há metodos suficientes para lidar
+	// com esse atributo.
 }
