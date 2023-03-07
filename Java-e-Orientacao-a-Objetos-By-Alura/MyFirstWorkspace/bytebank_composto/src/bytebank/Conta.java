@@ -10,7 +10,7 @@ public class Conta {
 
 	// Métodos:
 	void deposita(double valor) {
-		this.saldo += valor; // Embora seja opcional, usar sempre a referência this é uma boa prática.
+		this.saldo += valor; // Embora seja opcional, usar sempre que possível a referência this é uma boa prática.
 	}
 
 	boolean saca(double valor) {

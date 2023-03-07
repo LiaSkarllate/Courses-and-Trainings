@@ -9,9 +9,8 @@ public class TestaBanco {
 
 		Conta contaDoWilliam = new Conta();
 		contaDoWilliam.deposita(100);
-
-		// Associação de um Cliente a uma Conta (composição):
-
+		
 		System.out.println(william);
+		System.out.println(contaDoWilliam);
 	}
 }

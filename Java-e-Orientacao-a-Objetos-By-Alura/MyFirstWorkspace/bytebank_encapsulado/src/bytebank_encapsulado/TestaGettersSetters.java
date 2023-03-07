@@ -1,4 +1,4 @@
-package bytebank;
+package bytebank_encapsulado;
 
 public class TestaGettersSetters {
 	public static void main(String[] args) {

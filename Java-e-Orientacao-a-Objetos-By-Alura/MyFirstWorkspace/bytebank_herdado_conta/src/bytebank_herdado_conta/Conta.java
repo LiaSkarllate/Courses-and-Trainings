@@ -1,11 +1,13 @@
-package bytebank;
-public class Conta {
+package bytebank_herdado_conta;
+
+public abstract class Conta {
 	// Atributos (de instância):
 	private double saldo;
 	private int agencia/* = 42 */; // O valor padrão de atributos pode ser alterado.
 	private int numero;
-	// É preciso ter cuidado com atributos de referência não inicializados.
-	private Cliente titular /*new Cliente()*/; // Toda nova conta é de um cliente novo?
+	// É preciso ter cuidado com atributos de referência não inicializados, pois não nulo por padrão.
+	// Isso é uma composição:
+	private Cliente titular /* = new Cliente()*/; // Toda nova conta é de um cliente novo?
 
 	// Atributos (de classe):
 	private static int total = 0;
@@ -13,10 +15,14 @@ public class Conta {
 	// Construtores:
 	public Conta(int agencia, int numero) {
 		Conta.total++;
-		System.out.println("Total of Conta = " + Conta.getTotal());
+		// System.out.println("Total of Conta = " + Conta.getTotal());
 		
 		this.setAgencia(agencia);
 		this.setNumero(numero);
+	}
+	
+	public Conta() {
+		
 	}
 	
 	// Métodos:

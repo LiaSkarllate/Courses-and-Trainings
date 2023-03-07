@@ -1,9 +1,9 @@
-package bytebank;
+package bytebank_encapsulado;
 
 public class TestaValores {
 	public static void main(String[] args) {
 		Conta conta = new Conta(1337, 2455);
-		Conta conta2 = new Conta(1337, 3236);
+		// Conta conta2 = new Conta(1337, 3236);
 	
 		// Nesse ponto, embora sintaticamente correta, a conta está inconsistente com as
 		// regras de negócio.
