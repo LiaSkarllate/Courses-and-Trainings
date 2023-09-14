@@ -4,7 +4,7 @@ public class Conta {
 	private double saldo;
 	private int agencia/* = 42 */; // O valor padrão de atributos pode ser alterado.
 	private int numero;
-	// É preciso ter cuidado com atributos de referência não inicializados.
+	// É preciso ter cuidado com atributos de referência não inicializados, pois não nulo por padrão.
 	// Isso é uma composição:
 	private Cliente titular /* = new Cliente()*/; // Toda nova conta é de um cliente novo?
 

@@ -15,7 +15,7 @@ public class TestaPontoFlutuante {
 		double divisao = 3.14 / 2;
 		int outraDivisao = 5 / 2; // Uma operação apenas com tipos inteiros resulta em um tipo inteiro.
 		double novaTentativa = 5 / 2;
-		double maisUmaTentativa = 5.0 / 2; // Uma operação com diferentes tipos resulta no tipo de maior range.
+		double maisUmaTentativa = 5.0 / 2; // Uma operação com diferentes tipos resulta no tipo de maior escopo.
 
 		System.out.println(divisao);
 		System.out.println(outraDivisao);
