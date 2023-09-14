@@ -1,30 +1,33 @@
  + HTTP (do inglês, Hypertext Transfer Protocol);
- 	- httprobe: Recuperar e imprimir servidores ou HTTP ou HTTPS (respondem na porta 80 ou na 443) com base em um lista de hospedeiros;
- 	- httpx (python): Recuperar e imprimir servidores ou HTTP ou HTTPS (respondem na porta 80 ou na 443) com base em um lista de hospedeiros;
- 	- httpx (go): Realizar uma requisição ou HTTP ou HTTPS e imprimir a sua resposta.
+ 	- httprobe: Recuperar e imprimir servidores ou HTTP ou HTTPS de uma lista de hospedeiros;
+ 	- httpx (python): Recuperar e imprimir servidores ou HTTP ou HTTPS (respondem na porta 80 ou na 443) de uma lista de hospedeiros;
+ 	- httpx (go): Recuperar e imprimir servidores ou HTTP ou HTTPS de uma lista de hospedeiros;
+		- cat subs.txt | ./httpx -o active-subs.txt
+	- aquatone: Recuperar e imprimir servidores ou HTTP ou HTTPS de uma lista de hospedeiros.
  + Aplicações Web;
- 	- dirb: Recuperar e imprimir diretórios de um hospedeiro (com base em uma lista);
- 		* dirb 192.168.0.7 -w
- 	- dirsearch: Recuperar e imprimir diretórios de um hospedeiro;
- 	- paramspider: Recuperar e imprimir parâmetros em URLs de um hospedeiro;
- 	- gau: Recuperar e imprimir URLs de um hospedeiro;
+ 	- dirb: Recuperar e imprimir diretórios de um domínio com base em uma lista de palavras;
+ 		* dirb <host> [-w]
+ 	- dirsearch: Recuperar e imprimir diretórios de um domínio com base em uma lista de palavras;
+	- gau: Recuperar e imprimir URLs conhecidas publicamente de um hospedeiro;
+ 	- paramspider: Recuperar e imprimir parâmetros conhecidos publicamente de URLs de um domínio;
  	- WordPress:
  		* wpscan: Recuperar e imprimir informações e vulnerabilidades de um hospedeiro que executa WordPress.
- 			~ wpscan --url http://192.168.0.7/wp-blog
+ 			~ wpscan [--url <host>]
  + Comunicação;
  	- ping: Enviar e coletar pacotes ICMP de um hospedeiro;
  	- fping: Enviar e coletar pacotes ICMP de uma faixa de endereços;
- 		* fping -c1 -g 192.168.0.0 192.168.0.255 2> ./inativos.txt > ativos.txt
- 	- nmap: Enviar e coletar pacotes tanto ICMP tanto TCP de um hospedeiro ou de uma faixa de endereços.
- 		* nmap -sP 192.168.0.0/24 | grep for | cut -d " " -f5
- 		* nmap -sn 192.168.0.7
+ 		* fping [-c1] [-g <inferior> <upper>] 2> /path/to/errors.txt > /path/to/actives.txt 
+ 	- nmap: Enviar e coletar pacotes tanto ICMP tanto TCP de um hospedeiro ou de uma faixa de endereços (varredura ICMP).
+ 		* nmap [-sP <range>] | grep for | cut -d " " -f5
+ 		* nmap [-sn <host>]
  + Escaneamento de portas (do inglês, Port Scanning);
- 	- nmap: Analisar e imprimir quais portas estão ativas (que estão "ouvindo") de um hospedeiro;
- 		* nmap -v 192.168.0.7
- 		* nmap -sV 192.168.0.7
- 		* nmap -sF 192.168.0.7
- 		* nmap -O 192.168.0.7
- 		* nmap -F -A 192.168.0.7
+ 	- nmap: Analisar e imprimir portas que estão ativas (que estão "ouvindo") em um hospedeiro;
+		* nmap [<range>]
+ 		* nmap [-v] [<host>]
+ 		* nmap [-sV] [<host>]
+ 		* nmap [-sF] [<host>]
+ 		* nmap [-O] [<host>]
+ 		* nmap [-F -A] [<host>]
  	- hping3: Analisar e imprimir se uma porta está ativa (que está "ouvindo") de um hospedeiro através de pacotes TCP sinalizados (do inglês, flaggeds).
  		* hping3 --syn -c 1 -p 80 192.168.0.7
  			~ flag=SA: Houve uma resposta do servidor e a porta está aperta;
