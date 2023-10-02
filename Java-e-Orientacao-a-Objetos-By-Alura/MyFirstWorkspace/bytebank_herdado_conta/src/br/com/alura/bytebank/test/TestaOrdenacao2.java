@@ -46,15 +46,16 @@ public class TestaOrdenacao2 {
         lista.sort(null); // Usa a "ordem natural".
         lista.sort(new NumeroDaContaComparator());
         lista.sort(new TitularDaContaComparator());
+        lista.sort(Comparator.comparing(Conta::getNumero));
         
         // Anteriormente, era da seguinte forma:
         Collections.sort(lista); // Usa a "ordem natural".
         Collections.sort(lista, new NumeroDaContaComparator2());
         Collections.sort(lista, new TitularDaContaComparator2());
-	}
+        Collections.sort(lista, Comparator.comparing(Conta::getNumero)); // Introduzido no Java 8.
 }
 
-// Um arquivo .java geralmente contém uma (1) classe, mas conter mais:
+// Um arquivo .java geralmente contém uma (1) classe, mas pode conter mais:
 class TitularDaContaComparator2 implements Comparator<Conta> {
     @Override
     public int compare(Conta c1, Conta c2) {
