@@ -5,11 +5,14 @@
 		- cat subs.txt | ./httpx -o active-subs.txt
 	- aquatone: Recuperar e imprimir servidores ou HTTP ou HTTPS de uma lista de hospedeiros.
  + Aplicações Web;
- 	- dirb: Recuperar e imprimir diretórios de um domínio com base em uma lista de palavras;
- 		* dirb <host> [-w]
- 	- dirsearch: Recuperar e imprimir diretórios de um domínio com base em uma lista de palavras;
-	- gau: Recuperar e imprimir URLs conhecidas publicamente de um hospedeiro;
- 	- paramspider: Recuperar e imprimir parâmetros conhecidos publicamente de URLs de um domínio;
+ 	- dirb: Recuperar e imprimir diretórios de um domínio com base em uma lista de palavras de maneira ativa;
+ 		* dirb <host> [<list>]
+ 	- dirsearch: Recuperar e imprimir diretórios de um domínio com base em uma lista de palavras de maneira ativa;
+	- gobuster: Recuperar e imprimir diretórios de um domínio com base em uma lista de palavras de maneira ativa;
+		* gobuster dir -u <host> -w <list>
+	- gau: Recuperar e imprimir URLs de um hospedeiro de maneira passiva;
+ 	- paramspider: Recuperar e imprimir parâmetros de URLs de um domínio de maneira passiva;
+	- wfuzz: Realizar o processo de fuzzing em parâmetros de URLs;
  	- WordPress:
  		* wpscan: Recuperar e imprimir informações e vulnerabilidades de um hospedeiro que executa WordPress.
  			~ wpscan [--url <host>]
