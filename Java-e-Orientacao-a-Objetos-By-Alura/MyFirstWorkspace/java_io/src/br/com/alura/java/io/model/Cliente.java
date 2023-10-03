@@ -1,4 +1,4 @@
-package br.com.alura.java.io.teste;
+package br.com.alura.java.io.model;
 
 import java.io.Serializable;
 

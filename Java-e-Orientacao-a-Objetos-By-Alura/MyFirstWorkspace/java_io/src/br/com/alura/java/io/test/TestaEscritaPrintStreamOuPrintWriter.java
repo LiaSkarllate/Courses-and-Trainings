@@ -1,4 +1,4 @@
-package br.com.alura.java.io.teste;
+package br.com.alura.java.io.test;
 
 import java.io.IOException;
 import java.io.PrintStream;
