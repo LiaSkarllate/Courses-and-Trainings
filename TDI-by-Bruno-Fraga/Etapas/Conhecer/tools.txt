@@ -1,26 +1,30 @@
- + DNS (do inglês, Sistema de Nomes de Domínios);
-	- whois: Recuperar e imprimir informações do registro de um domínio ou de um endereço;
-		* whois <name>
-		* whois <name> [-h server]
-	- host: Recuperar e imprimir registros DNS de um domínio;
-	 	* host -t NS <name>: Recuperar e imprimir servidores DNS que são autoridade para um domínio;
-	 	* host -d <name> [server]: Recuperar e imprimir de forma verbosa registros DNS de um domínio consultados em um servidor DNS;
-	 	* host -l <name> [server]: Executar uma transferência de zona para um servidor DNS, enquanto recupera e imprime registros DNS de um domínio.
-	- dig: Recuperar e imprimir registros DNS de um domínio;
-	- dnsenum: Recuperar e imprimir registros DNS de um domínio e os seus subdomínios com base em uma lista;
-		* dnsenum [--enum] <domain> [-f /path/to/list.txt]: Recuperar e imprimir registros DNS de um domínio e os seus subdomínios com base em uma lista.
-	- dnsrecon: Recuperar e imprimir registros DNS de um domínio e os seus subdomínios com base em uma lista;
-	- fierce: Recuperar e imprimir registros DNS de um domínio e os seus subdomínios com base em uma lista;
-	- assetfinder: Recuperar e imprimir subdomínios de um domínio de maneira passiva;
-	- subfinder: Recuperar e imprimir subdomínios de um domínio de maneira passiva;
-		* subfinder -d <domain> -o subs.txt
-	- maltego: Agregar informações de várias bases de dados públicas e visualizar em formato de grafos.
- + Rastreamento/Registro de usuário (do inglês, User Tracking/Logging);
- 	- Blasze;
- 	- MailTracking;
- + Endereços de E-mail;
- 	- theHarvester: Recuperar de bases públicas e imprimir endereços de e-mail de um domínio;
- 		* theHarvester -d <name> [-l limit] [-b source]
- 	- gather: Recuperar de bases públicas e imprimir endereços de e-mail de um domínio.
- + Aplicações Web.
- 	- whatweb: Recuperar e imprimir as tecnologias de desenvolvimento utilizadas por um site.
++ HTTP (Hypertext Transfer Protocol):
+	- httprobe: Uma ferramenta para recuperar e imprimir servidores HTTP ou HTTPS de uma lista de hospedeiros.
+		* httprobe <hosts.txt>
+	- httpx (python): Uma ferramenta para recuperar e imprimir servidores HTTP ou HTTPS que respondem nas portas 80 ou 443 de uma lista de hospedeiros.
+  		* httpx -o active-subs.txt -l subs.txt
+	- httpx (go): Uma ferramenta para recuperar e imprimir servidores HTTP ou HTTPS de uma lista de hospedeiros.
+  		* cat subs.txt | httpx -o active-subs.txt
+	- aquatone: Uma ferramenta para recuperar e imprimir servidores HTTP ou HTTPS de uma lista de hospedeiros.
+  		* aquatone-discover <hosts.txt>
++ Aplicações Web:
+	- dirb: Uma ferramenta ativa para recuperar e imprimir diretórios de um domínio com base em uma lista de palavras.
+  		* dirb <host> <wordlist.txt>
+	- dirsearch: Uma ferramenta ativa para recuperar e imprimir diretórios de um domínio com base em uma lista de palavras.
+  		* dirsearch -u <host> -w <wordlist.txt>
+	- gobuster: Uma ferramenta ativa para recuperar e imprimir diretórios de um domínio com base em uma lista de palavras.
+  		* gobuster dir -u <host> -w <wordlist.txt>
+	- gau: Uma ferramenta passiva para recuperar e imprimir URLs de um hospedeiro.
+  		* gau <host>
+	- paramspider: Uma ferramenta passiva para recuperar e imprimir parâmetros de URLs de um domínio.
+  		* paramspider -d <domain>
+	- wfuzz: Uma ferramenta para realizar fuzzing em parâmetros de URLs.
+	- wpscan: Uma ferramenta para recuperar e imprimir informações e vulnerabilidades de um hospedeiro que executa WordPress.
+  		* wpscan --url <host>
++ Comunicação em rede:
+	- ping: Uma ferramenta para enviar e coletar pacotes ICMP de um hospedeiro.
+  		* ping <host>
+	- fping: Uma ferramenta para enviar e coletar pacotes ICMP de uma faixa de endereços.
+  		* fping -c1 -g <start> <end> 2> errors.txt > actives.txt
+	- nmap (varredura ICMP): Uma ferramenta para enviar e coletar pacotes ICMP de um hospedeiro ou de uma faixa de endereços.
+  		* nmap -sP <range> | grep for | cut -d " " -f5

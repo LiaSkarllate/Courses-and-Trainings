@@ -1,43 +1,36 @@
- + HTTP (do inglês, Hypertext Transfer Protocol);
- 	- httprobe: Recuperar e imprimir servidores ou HTTP ou HTTPS de uma lista de hospedeiros;
- 	- httpx (python): Recuperar e imprimir servidores ou HTTP ou HTTPS (respondem na porta 80 ou na 443) de uma lista de hospedeiros;
- 	- httpx (go): Recuperar e imprimir servidores ou HTTP ou HTTPS de uma lista de hospedeiros;
-		- cat subs.txt | ./httpx -o active-subs.txt
-	- aquatone: Recuperar e imprimir servidores ou HTTP ou HTTPS de uma lista de hospedeiros.
- + Aplicações Web;
- 	- dirb: Recuperar e imprimir diretórios de um domínio com base em uma lista de palavras de maneira ativa;
- 		* dirb <host> [<list>]
- 	- dirsearch: Recuperar e imprimir diretórios de um domínio com base em uma lista de palavras de maneira ativa;
-	- gobuster: Recuperar e imprimir diretórios de um domínio com base em uma lista de palavras de maneira ativa;
-		* gobuster dir -u <host> -w <list>
-	- gau: Recuperar e imprimir URLs de um hospedeiro de maneira passiva;
- 	- paramspider: Recuperar e imprimir parâmetros de URLs de um domínio de maneira passiva;
-	- wfuzz: Realizar o processo de fuzzing em parâmetros de URLs;
- 	- WordPress:
- 		* wpscan: Recuperar e imprimir informações e vulnerabilidades de um hospedeiro que executa WordPress.
- 			~ wpscan [--url <host>]
- + Comunicação;
- 	- ping: Enviar e coletar pacotes ICMP de um hospedeiro;
- 	- fping: Enviar e coletar pacotes ICMP de uma faixa de endereços;
- 		* fping [-c1] [-g <inferior> <upper>] 2> /path/to/errors.txt > /path/to/actives.txt 
- 	- nmap: Enviar e coletar pacotes tanto ICMP tanto TCP de um hospedeiro ou de uma faixa de endereços (varredura ICMP).
- 		* nmap [-sP <range>] | grep for | cut -d " " -f5
- 		* nmap [-sn <host>]
- + Escaneamento de portas (do inglês, Port Scanning);
- 	- nmap: Analisar e imprimir portas que estão ativas (que estão "ouvindo") em um hospedeiro;
-		* nmap [<range>]
- 		* nmap [-v] [<host>]
- 		* nmap [-sV] [<host>]
- 		* nmap [-sF] [<host>]
- 		* nmap [-O] [<host>]
- 		* nmap [-F -A] [<host>]
- 	- hping3: Analisar e imprimir se uma porta está ativa (que está "ouvindo") de um hospedeiro através de pacotes TCP sinalizados (do inglês, flaggeds).
- 		* hping3 --syn -c 1 -p 80 192.168.0.7
- 			~ flag=SA: Houve uma resposta do servidor e a porta está aperta;
- 			~ Porta Unreachable: Houve uma resposta do servidor e a porta rejeita (do inglês, reject) pacotes;
- 			~ 100% packet loss: Não houve uma resposta do servidor. Possivelmente, foi barrado (do inglês, drop) silenciosamente;
- 			~ flag=RA: Houve uma resposta do servidor e a porta está fechada.
- + Captura de Banner (do inglês, Banner Grabbing).
- 	- netcat/nc: Estabecer uma conexão e enviar requisições HTTP para um servidor;
- 	- openssl: Estabecer uma conexão e enviar requisições HTTPS para um servidor.
- 			
++ Escaneamento de Portas (Port Scanning):
+	- nmap: Uma ferramenta para analisar e imprimir portas ativas em um hospedeiro.
+  		* nmap -v -sV -p	- <host>
+	- hping3: Uma ferramenta para analisar se uma porta está ativa em um hospedeiro usando pacotes TCP sinalizados.
+  		* hping3 --syn -c 1 -p 80 <host>
++ Captura de Banner (Banner Grabbing):
+	- netcat (nc): Uma ferramenta para estabelecer uma conexão e enviar requisições HTTP para um servidor.
+  		* nc <host> 80
+	- openssl: Uma ferramenta para estabelecer uma conexão e enviar requisições HTTPS para um servidor.
++ DNS (Sistema de Nomes de Domínios):
+	- whois: Uma ferramenta para recuperar e imprimir informações do registro de um domínio ou de um endereço.
+  		* whois <name>
+	- host: Uma ferramenta para recuperar e imprimir registros DNS de um domínio.
+  		* host -t NS <name>
+	- dig: Uma ferramenta para recuperar e imprimir registros DNS de um domínio.
+  		* dig <name>
+	- dnsenum: Uma ferramenta para recuperar e imprimir registros DNS de um domínio e seus subdomínios com base em uma lista.
+  		* dnsenum --enum <domain> -f /path/to/list.txt
+	- dnsrecon: Uma ferramenta para recuperar e imprimir registros DNS de um domínio e seus subdomínios com base em uma lista.
+	- fierce: Uma ferramenta para recuperar e imprimir registros DNS de um domínio e seus subdomínios com base em uma lista.
+	- assetfinder: Uma ferramenta passiva para recuperar e imprimir subdomínios de um domínio.
+	- subfinder: Uma ferramenta passiva para recuperar e imprimir subdomínios de um domínio.
+  		* subfinder -d <domain> -o subs.txt
+	- maltego: Uma ferramenta para agregar informações de várias bases de dados públicas e visualizá-las em formato de grafos.
++ Rastreamento/Registro de Usuário (User Tracking/Logging):
+	- Blasze: 
+	- MailTracking:
+	- theHarvester: Uma ferramenta para recuperar e imprimir endereços de e-mail de um domínio a partir de bases públicas.
+  		* theHarvester -d <name> -l <limit> -b <source>
+	- gather: Uma ferramenta para recuperar e imprimir endereços de e-mail de um domínio a partir de bases públicas.
++ Aplicações Web:
+	- whatweb: Uma ferramenta para recuperar e imprimir as tecnologias de desenvolvimento utilizadas por um site
++ Interface de Rede:
+	- tcpdump: Uma ferramenta para monitorar pacotes trafegados em uma interface de rede.
+  		* tcpdump -i eth0
+	- netstat: Uma ferramenta para imprimir informações sobre conexões, tabelas de roteamento e estatísticas de uma interface de rede.

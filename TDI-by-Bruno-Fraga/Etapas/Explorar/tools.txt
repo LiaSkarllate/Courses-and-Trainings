@@ -1,2 +1,0 @@
- + Conexões Remotas e Reversas (do inglês, Remote and Reverse Shells).
- 	- /usr/share/webshells: Diretório do Kali Linux com códigos prontos para a execução de conexões remotas e reversas.
