@@ -1,13 +1,13 @@
-+ Escaneamento de Portas (Port Scanning):
++ Escaneamento de Portas (do inglês, Port Scanning):
 	- nmap: Uma ferramenta para analisar e imprimir portas ativas em um hospedeiro.
   		* nmap -v -sV -p	- <host>
 	- hping3: Uma ferramenta para analisar se uma porta está ativa em um hospedeiro usando pacotes TCP sinalizados.
   		* hping3 --syn -c 1 -p 80 <host>
-+ Captura de Banner (Banner Grabbing):
++ Captura de Banner (do inglês, Banner Grabbing):
 	- netcat (nc): Uma ferramenta para estabelecer uma conexão e enviar requisições HTTP para um servidor.
   		* nc <host> 80
 	- openssl: Uma ferramenta para estabelecer uma conexão e enviar requisições HTTPS para um servidor.
-+ DNS (Sistema de Nomes de Domínios):
++ DNS (do inglês, Domain Name System):
 	- whois: Uma ferramenta para recuperar e imprimir informações do registro de um domínio ou de um endereço.
   		* whois <name>
 	- host: Uma ferramenta para recuperar e imprimir registros DNS de um domínio.
@@ -22,7 +22,7 @@
 	- subfinder: Uma ferramenta passiva para recuperar e imprimir subdomínios de um domínio.
   		* subfinder -d <domain> -o subs.txt
 	- maltego: Uma ferramenta para agregar informações de várias bases de dados públicas e visualizá-las em formato de grafos.
-+ Rastreamento/Registro de Usuário (User Tracking/Logging):
++ Rastreamento de Usuário (do inglês, User Tracking):
 	- Blasze: 
 	- MailTracking:
 	- theHarvester: Uma ferramenta para recuperar e imprimir endereços de e-mail de um domínio a partir de bases públicas.

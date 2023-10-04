@@ -1,4 +1,4 @@
-+ HTTP (Hypertext Transfer Protocol):
++ HTTP (do inglês, Hypertext Transfer Protocol):
 	- httprobe: Uma ferramenta para recuperar e imprimir servidores HTTP ou HTTPS de uma lista de hospedeiros.
 		* httprobe <hosts.txt>
 	- httpx (python): Uma ferramenta para recuperar e imprimir servidores HTTP ou HTTPS que respondem nas portas 80 ou 443 de uma lista de hospedeiros.
@@ -21,7 +21,7 @@
 	- wfuzz: Uma ferramenta para realizar fuzzing em parâmetros de URLs.
 	- wpscan: Uma ferramenta para recuperar e imprimir informações e vulnerabilidades de um hospedeiro que executa WordPress.
   		* wpscan --url <host>
-+ Comunicação em rede:
++ Comunicação em Rede:
 	- ping: Uma ferramenta para enviar e coletar pacotes ICMP de um hospedeiro.
   		* ping <host>
 	- fping: Uma ferramenta para enviar e coletar pacotes ICMP de uma faixa de endereços.
