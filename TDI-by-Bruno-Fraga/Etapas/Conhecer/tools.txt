@@ -28,3 +28,6 @@
   		* fping -c1 -g <start> <end> 2> errors.txt > actives.txt
 	- nmap (varredura ICMP): Uma ferramenta para enviar e coletar pacotes ICMP de um hospedeiro ou de uma faixa de endereços.
   		* nmap -sP <range> | grep for | cut -d " " -f5
+		* nmap -sS -sP -p 22 <host>
+		* nmap -O <host>
+		* nmap -p- <host>
