@@ -68,10 +68,13 @@ public class TestaOrdenacao {
 }
 
 /* 
- * O objetivo das seguinte classes é exclusivamente encapsular um (1) método para ser usado nesse arquivo, 
- * o que não é uma motivação suficiente para as suas criações. A instância desse tipo de classe é chamada 
- * de objeto de função (do inglês, function object): 
- */
+	O objetivo das seguintes classes é exclusivamente encapsular um (1) único 
+	método, o que não é uma motivação suficiente para as suas criações nomeadas. 
+
+	As instâncias desse tipo de classe são chamadas de objetos de função 
+	(do inglês, function objects) e as interfaces implementadas por esse 
+	tipo de classe, de interfaces funcionais (do inglês, functional interfaces).
+*/
 class TitularDaContaComparator implements Comparator<Conta> {
     @Override
     public int compare(Conta c1, Conta c2) {
