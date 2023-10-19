@@ -19,6 +19,7 @@
 	- paramspider: Uma ferramenta passiva para recuperar e imprimir parâmetros de URLs de um domínio.
   		* paramspider -d <domain>
 	- wfuzz: Uma ferramenta para realizar fuzzing em parâmetros de URLs.
+		* wfuzz -u <host>/FUZZ -w <wordlist.txt> --sc 200
 	- wpscan: Uma ferramenta para recuperar e imprimir informações e vulnerabilidades de um hospedeiro que executa WordPress.
   		* wpscan --url <host>
 + Comunicação em Rede:

@@ -21,6 +21,7 @@
 	- assetfinder: Uma ferramenta passiva para recuperar e imprimir subdomínios de um domínio.
 	- subfinder: Uma ferramenta passiva para recuperar e imprimir subdomínios de um domínio.
   		* subfinder -d <domain> -o subs.txt
+	- sublist3r: Uma ferramenta passiva para recuperar e imprimir subdomínios de um domínio.
 	- maltego: Uma ferramenta para agregar informações de várias bases de dados públicas e visualizá-las em formato de grafos.
 + Rastreamento de Usuário (do inglês, User Tracking):
 	- Blasze: 
